@@ -1,0 +1,8 @@
+all:
+  children:
+    ec2:
+      hosts:
+        instance1:
+          ansible_host: #need to still figure out how to use private IP  ##I know public IP well
+          ansible_user: ubuntu111
+          ansible_ssh_private_key_file: ~/.ssh/jenskins-ansible.pem
