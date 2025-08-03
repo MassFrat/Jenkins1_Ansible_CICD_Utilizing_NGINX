@@ -4,7 +4,7 @@ pipeline {
     stages {
 #?      stage("SCM checkout") {
             steps {
-#?              git "http://" 
+#?              git "https://github.com/MassFrat/Jenkins1_Ansible_CICD.git"
             }
         }
         
