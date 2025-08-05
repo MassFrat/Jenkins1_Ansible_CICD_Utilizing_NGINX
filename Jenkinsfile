@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     stages {
-#Clone repo?stage("SCM checkout") {
+#"Clone repo"? stage("SCM checkout") {
             steps {
 #?              git "https://github.com/MassFrat/Jenkins1_Ansible_CICD.git"
             }
