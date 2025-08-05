@@ -20,7 +20,7 @@
         state: started
         enabled: yes 
   
-# need to add an index.html file in my repo?   
+# need to add an index.html file under files folder in my repo?   
     - name: Deploy static website  
       copy:
         src: index.html  
