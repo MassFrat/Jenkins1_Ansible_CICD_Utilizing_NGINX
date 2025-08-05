@@ -5,14 +5,15 @@
   gather facts: yes 
   tasks:
 
-    - name: Update apt cache
-      apt:
-        update_cache: yes 
+#- name: Update apt cache
+#apt:
+#update_cache: yes 
 
     - name: Install NGINX Server
       apt:
         name: nginx
         state: present
+        update_cache: yes 
   
     - name: Start and Enable NGINX Server
       service:
