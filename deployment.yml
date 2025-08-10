@@ -27,8 +27,8 @@
         src: files/index.html  
         dest: /var/www/html    
 
-    - name: Ensure NGINX is running
-      service:
-        name: nginx
-        state: started
-        enabled: yes
+#    - name: Ensure NGINX is running
+#      service:
+#        name: nginx
+#        state: started
+#        enabled: yes
