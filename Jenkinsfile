@@ -9,7 +9,6 @@ pipeline {
                installation: 'Ansible',
                inventory: 'inventory',
                playbook: 'deployment.yml'
-            }    
-        }    
-    }
+         }    
+     }    
 }
