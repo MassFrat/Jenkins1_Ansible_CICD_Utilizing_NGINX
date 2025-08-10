@@ -5,5 +5,5 @@ all:
         web01:
           ansible_host: 3.88.225.86
           ansible_user: ubuntu
-          ansible_ssh_private_key_file: /home/ubuntu111/.ssh/id_rsa.pub
+          ansible_ssh_private_key_file: /home/ubuntu111/.ssh/jenkins-ansible.pub
           ansible_python_interpreter: /usr/bin/python3.12
