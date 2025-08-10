@@ -1,6 +1,6 @@
 ---
 - name: Install and Configure NGINX Server
-  hosts: all
+  hosts: web01
   become: yes 
   
   tasks:
