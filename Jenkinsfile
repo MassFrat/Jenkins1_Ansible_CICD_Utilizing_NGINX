@@ -1,9 +1,9 @@
 pipeline {
     agent any
  
-    stage("Execute Ansible Playbook") {
+    stage{'Execute Ansible Playbook'} {
         steps {
-           ansiblePlaybook 
+           ansiblePlaybook{ 
                credentialsId: 'ansible_ssh_key',   
                disableHostKeyChecking: true,
                installation: 'Ansible',
