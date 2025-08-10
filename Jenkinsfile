@@ -3,7 +3,7 @@ pipeline {
  
     stages {
         stage('Execute Ansible Playbook') {
-            steps 
+            steps {
                ansiblePlaybook(
                credentialsId: 'ansible_ssh_key',   
                disableHostKeyChecking: true,
