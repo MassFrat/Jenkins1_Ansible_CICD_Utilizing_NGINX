@@ -4,16 +4,12 @@
   become: yes 
   gather facts: yes 
   tasks:
-
-#- name: Update apt cache
-#apt:
-#update_cache: yes 
-
     - name: Install NGINX Server
       apt:
         name: nginx
         state: present
         update_cache: yes 
+      notify: Restart NGINX
   
     - name: Start and Enable NGINX Server
       service:
@@ -21,14 +17,15 @@
         state: started
         enabled: yes 
   
-# need to add an index.html file under files folder in my repo?   
     - name: Deploy static website  
       copy:
         src: files/index.html  
         dest: /var/www/html    
+      notify: Restart NGINX
 
-#    - name: Ensure NGINX is running
-#      service:
-#        name: nginx
-#        state: started
-#        enabled: yes
+handlers:
+  - name: Restart NGINX
+    service:
+      name: nginx
+      state: restarted
+       
