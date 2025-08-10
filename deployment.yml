@@ -19,7 +19,7 @@
   
     - name: Deploy static website  
       copy:
-        src: files/index.html  
+        src: index.html  
         dest: /var/www/html    
       notify: Restart NGINX
 
