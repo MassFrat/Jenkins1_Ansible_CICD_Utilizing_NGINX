@@ -1,8 +1,9 @@
 all:
   children:
-    webservers:
+    ec2:
       hosts:
-        ansible_host: 54.211.15.27
-        ansible_user: ubuntu
-        ansible_ssh_private_key_file: /home/ubuntu111/.ssh/jenkins-ansible.pem
-        ansible_python_interpreter: /usr/bin/python3.12
+        instance1:
+          ansible_host: 54.211.15.27
+          ansible_user: ubuntu
+          ansible_ssh_private_key_file: /home/ubuntu111/.ssh/jenkins-ansible.pem
+          ansible_python_interpreter: /usr/bin/python3.12
