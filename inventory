@@ -3,7 +3,7 @@ all:
     webservers:
       hosts:
         web01:
-          ansible_host: 54.165.161.155
+          ansible_host: 13.221.238.184
           ansible_user: ubuntu
-          ansible_ssh_private_key_file: /home/ubuntu/.ssh/jenkins-ans1
+          ansible_ssh_private_key_file: /home/ubuntu/.ssh/cicd-jen-ans
           ansible_python_interpreter: /usr/bin/python3.12
